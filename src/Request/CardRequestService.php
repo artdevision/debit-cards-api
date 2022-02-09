@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Artdevision\DebitCardsApi\Request;
 
-use Artdevision\DebitCardsApi\DTO\AbstractDto;
 use Artdevision\DebitCardsApi\DTO\CardCreateDto;
 use Artdevision\DebitCardsApi\DTO\CardResponseDto;
 use Artdevision\DebitCardsApi\Exception\DebitCardResponseException;
 use Psr\Http\Client\ClientExceptionInterface;
-use Psr\Http\Message\ResponseInterface;
 
 final class CardRequestService extends BaseRequestService
 {
