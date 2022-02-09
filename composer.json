@@ -1,0 +1,29 @@
+{
+    "name": "artdevision/debit-cards-api",
+    "description": "Abstract debit cards API client",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Artdevision\\DebitCardsApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Myslin",
+            "email": "artdevision@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/serializer": "5.4.*",
+        "symfony/property-access": "5.4.*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
