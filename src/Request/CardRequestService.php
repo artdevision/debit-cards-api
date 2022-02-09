@@ -82,9 +82,9 @@ final class CardRequestService extends BaseRequestService
      * @throws ClientExceptionInterface
      * @throws DebitCardResponseException
      */
-    public function active(int $id): bool
+    public function activate(int $id): bool
     {
-        $response = $this->post(sprintf('/cards/%s/update', $id));
+        $response = $this->post(sprintf('/cards/%s/activate', $id));
         return $response->getStatusCode() === 204;
     }
 
