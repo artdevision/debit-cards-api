@@ -20,7 +20,10 @@ class HttpClientFactory
         $stack->setHandler(new CurlHandler());
 
         $stack->push(Middleware::mapRequest(function (RequestInterface $request) use ($auth_key) {
-            return $request->withHeader('AUTH-KEY', $auth_key);
+            return $request
+                ->withHeader('AUTH-KEY', $auth_key)
+                ->withHeader('Accept', 'application/json')
+                ->withHeader('Content-Type', 'application/json');
         }));
 
         return new Client([
